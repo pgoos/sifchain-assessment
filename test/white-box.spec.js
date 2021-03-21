@@ -47,12 +47,17 @@ describe('White-box testing of quick sort algorithm', () => {
             sortedArray = quickSort(inputArray)
             expect(sortedArray).to.eql(inputArray.sort(compareNumbers))
         });
+        it('has balanced binary tree', () => {
+            inputArray = [9,6,12,3,10,1,11,9,20,8,15]
+            sortedArray = quickSort(inputArray)
+            expect(sortedArray).to.eql(inputArray.sort(compareNumbers))
+        });
     })
     context('Other cases', () => {
         it('puts all equal values onto the left side of binary tree', () => {
             inputArray = [3,3,3]
             sortedArray = quickSort(inputArray)
-            expect(sortedArray).to.eql(inputArray.sort(compareNumbers ))
+            expect(sortedArray).to.eql(inputArray.sort(compareNumbers))
         })
     })
 
