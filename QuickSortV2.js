@@ -1,4 +1,4 @@
-// this is slightly a modified quickSort function
+// this is a slightly modified quickSort function
 // where `items` is an array of objects and inside partition block
 // we are comparing based on `id` property
 const quickSortV2 = (items) => {
