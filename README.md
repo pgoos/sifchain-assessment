@@ -2,6 +2,7 @@
 This is an assessment made for Sifchain hiring process
 
 ## Installation
+You should have the latest [Node.js](https://nodejs.org/en/download/) installed. Then
 ```
 npm install
 ```
@@ -24,7 +25,7 @@ mochawesome-report/
 ```
 Test output is also logged to intermediate JSON file `mochawesome.json` (under the same directory)
 
-When code coverage is enabled (with `nyc` package), coverage is presented under
+When code coverage is enabled (with `nyc` package), it is presented under
 ```
 coverage/lcov-report
 ```
@@ -39,3 +40,11 @@ directory, where `index.html` is located. The report covers:
 ![](lcov.png)
 
 ![](lcov-details.png)
+
+## Notes
+
+Separate test implementation comments are put in each of the `spec` files:
+```
+test/black-box.spec.js
+test/white-box.spec.js
+```
