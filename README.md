@@ -37,3 +37,5 @@ directory, where `index.html` is located. The report covers:
 ### Example coverage report
 
 ![](lcov.png)
+
+![](lcov-details.png)
