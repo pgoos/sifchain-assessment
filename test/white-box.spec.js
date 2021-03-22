@@ -11,9 +11,13 @@
 * Chosen set of tests is complete since all logical paths are executed. 
 * We get 100% statement, decision, branch and line coverage.
 * On the other hand, that coverage could be achieved with just a single more complex input data set
-* but we aim to check logic paths on simple logic chunks.
+* but we aim of white box tests is to verify on simple logic chunks.
 * Moreover, it can be argued whether the tests chosen is a minimalistic set (for instance, (2-level binary tree vs N-level binary tree))
 * However, with more complex data sets it is ensured that the algorithm doesn't fall into unspecified behavior/logic
+* Assumptions made:
+* reference algorithm taken for comparison of results is sort() algorithm from JS standard lib
+* JavaScript works in such a way that unsorted array is passed to the sorting algorithm by reference (and not by value)
+* that impacts organization of the tests.
 */
 const chai = require('chai')
 const expect = chai.expect

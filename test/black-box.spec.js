@@ -1,3 +1,17 @@
+/*
+*   Black box tests are grouped by the usage of the algorithm
+*   - small arrays (for verification on small data sets)
+*   - big arrays/big numbers (for verification on large data sets or sets of big numbers)
+*   - floating values (for verification of collections of float numbers)
+*   - negative (for verification of improper data, though this is limited as JS in untyped language by its nature)
+*       That said, no test cases like mixed type of data: numbers vs non-numbers etc.
+*   - others (like verification if the sorting algorithm is stable)
+*   For set completeness, non-functional verification should also be done - like time or resource consumption.
+*   But given we don't know the details of algorithm under test, we cannot specify requirements/metrics for this measure.
+*
+* Note: reference sort() funtion was taken from JS standard lib for comparison of results.
+*/
+
 const chai = require('chai')
 const expect = chai.expect
 const quickSort = require("../QuickSort");
@@ -83,6 +97,11 @@ describe('Black-box testing of a (any) sorting algorithm', () => {
     context('floating values', () => {
         it('sorts correctly an array of float values', () => {
             inputArray = [1.23, 4.67, 2.11, 8.59, 0.001, 2.00001, 10.333333333]
+            sortedArray = quickSort(inputArray)
+            expect(sortedArray).to.eql(inputArray.sort(compareNumbers))
+        })
+        it('sorts correctly an array of mix integer and float values', () => {
+            inputArray = [1.23, 60, 600, 4.67, 10, 9, 2.11, 8.59, 0.001, 2.00001, 10.333333333, 11, 9]
             sortedArray = quickSort(inputArray)
             expect(sortedArray).to.eql(inputArray.sort(compareNumbers))
         })

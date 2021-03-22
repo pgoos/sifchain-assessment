@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 11,
-    "tests": 21,
-    "passes": 20,
+    "tests": 22,
+    "passes": 21,
     "pending": 0,
     "failures": 1,
-    "start": "2021-03-22T14:35:49.520Z",
-    "end": "2021-03-22T14:35:49.716Z",
-    "duration": 196,
-    "testsRegistered": 21,
-    "passPercent": 95.23809523809523,
+    "start": "2021-03-22T18:39:03.809Z",
+    "end": "2021-03-22T18:39:03.929Z",
+    "duration": 120,
+    "testsRegistered": 22,
+    "passPercent": 95.45454545454545,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "fa8c1bcd-3b33-4583-8eae-2fc7a224085b",
+      "uuid": "2a4992c0-15d0-4b55-991a-282c0d8017f3",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "cd4f972e-1f4a-48e8-8fd7-00fd7b3c8093",
+          "uuid": "4de215fd-3c97-4ca3-829f-fbe9d1d3517a",
           "title": "Black-box testing of a (any) sorting algorithm",
           "fullFile": "C:\\Projects\\sifchain-assessment\\test\\black-box.spec.js",
           "file": "\\test\\black-box.spec.js",
@@ -36,7 +36,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "c886d700-1d7a-4966-8332-d7ce446dc351",
+              "uuid": "e5f46a6e-1aa9-478d-bb04-f71389b359b2",
               "title": "small arrays",
               "fullFile": "C:\\Projects\\sifchain-assessment\\test\\black-box.spec.js",
               "file": "\\test\\black-box.spec.js",
@@ -47,7 +47,7 @@
                   "title": "returns correctly already sorted array",
                   "fullTitle": "Black-box testing of a (any) sorting algorithm small arrays returns correctly already sorted array",
                   "timedOut": false,
-                  "duration": 3,
+                  "duration": 1,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -56,8 +56,8 @@
                   "context": null,
                   "code": "inputArray = [1, 2, 3, 4, 5, 6]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray)",
                   "err": {},
-                  "uuid": "ab6e03d7-876a-4163-a5d0-1f53ef69c84f",
-                  "parentUUID": "c886d700-1d7a-4966-8332-d7ce446dc351",
+                  "uuid": "52388f63-4e19-4786-ac61-84053289e317",
+                  "parentUUID": "e5f46a6e-1aa9-478d-bb04-f71389b359b2",
                   "isHook": false,
                   "skipped": false
                 },
@@ -74,8 +74,8 @@
                   "context": null,
                   "code": "inputArray = [50]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray)",
                   "err": {},
-                  "uuid": "46f61884-2a0f-483a-9bbd-bf62a41c1f9c",
-                  "parentUUID": "c886d700-1d7a-4966-8332-d7ce446dc351",
+                  "uuid": "8e45f787-abd7-4f48-99e0-e59d3b01cada",
+                  "parentUUID": "e5f46a6e-1aa9-478d-bb04-f71389b359b2",
                   "isHook": false,
                   "skipped": false
                 },
@@ -92,8 +92,8 @@
                   "context": null,
                   "code": "inputArray = [5, 8, 5, 12, 5, 19, 5, 2, 3, 4, 6, 5]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
                   "err": {},
-                  "uuid": "777d46ef-7238-4ef7-bfdd-396afdb7f14c",
-                  "parentUUID": "c886d700-1d7a-4966-8332-d7ce446dc351",
+                  "uuid": "53758654-6b0e-4a02-9da3-c02334e65232",
+                  "parentUUID": "e5f46a6e-1aa9-478d-bb04-f71389b359b2",
                   "isHook": false,
                   "skipped": false
                 },
@@ -101,7 +101,7 @@
                   "title": "sorts negative numbers correctly",
                   "fullTitle": "Black-box testing of a (any) sorting algorithm small arrays sorts negative numbers correctly",
                   "timedOut": false,
-                  "duration": 1,
+                  "duration": 0,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -110,8 +110,8 @@
                   "context": null,
                   "code": "inputArray = [-22, -11, 1, -50, 4]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
                   "err": {},
-                  "uuid": "0c5d2d19-6f5f-4100-ba9e-8435e635fe5f",
-                  "parentUUID": "c886d700-1d7a-4966-8332-d7ce446dc351",
+                  "uuid": "fe6d8a66-b5f6-4190-a8a0-32e6fd330aae",
+                  "parentUUID": "e5f46a6e-1aa9-478d-bb04-f71389b359b2",
                   "isHook": false,
                   "skipped": false
                 },
@@ -119,7 +119,7 @@
                   "title": "sorts correctly partially sorted array",
                   "fullTitle": "Black-box testing of a (any) sorting algorithm small arrays sorts correctly partially sorted array",
                   "timedOut": false,
-                  "duration": 1,
+                  "duration": 0,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -128,8 +128,8 @@
                   "context": null,
                   "code": "inputArray = [1, 2, 3, 4, 5, 6, 20, 11, 14, 9]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
                   "err": {},
-                  "uuid": "ef6d09a4-3f34-4822-9c08-bd76216c5e96",
-                  "parentUUID": "c886d700-1d7a-4966-8332-d7ce446dc351",
+                  "uuid": "5eef87d0-5121-46ef-800d-5af0efaec9b0",
+                  "parentUUID": "e5f46a6e-1aa9-478d-bb04-f71389b359b2",
                   "isHook": false,
                   "skipped": false
                 },
@@ -146,8 +146,8 @@
                   "context": null,
                   "code": "inputArray = [10, 9, 7, 5, 3, 2, 1]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
                   "err": {},
-                  "uuid": "ee42e3c0-1a87-4db2-bda8-c28406aca0f0",
-                  "parentUUID": "c886d700-1d7a-4966-8332-d7ce446dc351",
+                  "uuid": "508cf41c-6d56-4299-bd8b-fe946558ca4d",
+                  "parentUUID": "e5f46a6e-1aa9-478d-bb04-f71389b359b2",
                   "isHook": false,
                   "skipped": false
                 },
@@ -155,7 +155,7 @@
                   "title": "sorts correctly unsorted array of positive values",
                   "fullTitle": "Black-box testing of a (any) sorting algorithm small arrays sorts correctly unsorted array of positive values",
                   "timedOut": false,
-                  "duration": 1,
+                  "duration": 0,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -164,8 +164,8 @@
                   "context": null,
                   "code": "inputArray = randomArrayGenerator({\n    min: 1,\n    max: 100,\n    elements: 20\n})\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
                   "err": {},
-                  "uuid": "eb4a1c16-21db-4920-a76e-466fc8471933",
-                  "parentUUID": "c886d700-1d7a-4966-8332-d7ce446dc351",
+                  "uuid": "41200116-05cc-44b3-a0e3-6a43eadfb871",
+                  "parentUUID": "e5f46a6e-1aa9-478d-bb04-f71389b359b2",
                   "isHook": false,
                   "skipped": false
                 },
@@ -182,119 +182,22 @@
                   "context": null,
                   "code": "inputArray = randomArrayGenerator({\n    min: 1,\n    max: 100,\n    elements: 20\n})\ninputArray[10] = 0\ninputArray[14] = 0\ninputArray[19] = 0\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
                   "err": {},
-                  "uuid": "ba87630e-b802-49d0-9bd0-176d7a490e19",
-                  "parentUUID": "c886d700-1d7a-4966-8332-d7ce446dc351",
+                  "uuid": "c401ed74-fe48-4036-8a15-62d1568ca79a",
+                  "parentUUID": "e5f46a6e-1aa9-478d-bb04-f71389b359b2",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "ab6e03d7-876a-4163-a5d0-1f53ef69c84f",
-                "46f61884-2a0f-483a-9bbd-bf62a41c1f9c",
-                "777d46ef-7238-4ef7-bfdd-396afdb7f14c",
-                "0c5d2d19-6f5f-4100-ba9e-8435e635fe5f",
-                "ef6d09a4-3f34-4822-9c08-bd76216c5e96",
-                "ee42e3c0-1a87-4db2-bda8-c28406aca0f0",
-                "eb4a1c16-21db-4920-a76e-466fc8471933",
-                "ba87630e-b802-49d0-9bd0-176d7a490e19"
-              ],
-              "failures": [],
-              "pending": [],
-              "skipped": [],
-              "duration": 6,
-              "root": false,
-              "rootEmpty": false,
-              "_timeout": 2000
-            },
-            {
-              "uuid": "856220de-d449-4949-b2b2-19cd56369868",
-              "title": "big arrays/big numbers",
-              "fullFile": "C:\\Projects\\sifchain-assessment\\test\\black-box.spec.js",
-              "file": "\\test\\black-box.spec.js",
-              "beforeHooks": [],
-              "afterHooks": [],
-              "tests": [
-                {
-                  "title": "sorts correctly big array",
-                  "fullTitle": "Black-box testing of a (any) sorting algorithm big arrays/big numbers sorts correctly big array",
-                  "timedOut": false,
-                  "duration": 57,
-                  "state": "passed",
-                  "speed": "medium",
-                  "pass": true,
-                  "fail": false,
-                  "pending": false,
-                  "context": null,
-                  "code": "inputArray = randomArrayGenerator({\n    min: 1,\n    max: 10000,\n    elements: 10000\n})\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
-                  "err": {},
-                  "uuid": "7a65059b-e667-40cd-9040-7b158fda61cf",
-                  "parentUUID": "856220de-d449-4949-b2b2-19cd56369868",
-                  "isHook": false,
-                  "skipped": false
-                },
-                {
-                  "title": "sorts correctly array of big numbers",
-                  "fullTitle": "Black-box testing of a (any) sorting algorithm big arrays/big numbers sorts correctly array of big numbers",
-                  "timedOut": false,
-                  "duration": 31,
-                  "state": "passed",
-                  "speed": "fast",
-                  "pass": true,
-                  "fail": false,
-                  "pending": false,
-                  "context": null,
-                  "code": "inputArray = inputArray = randomArrayGenerator({\n    min: 1000000000000000,\n    max: 9000000000000000,\n    elements: 50\n})\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
-                  "err": {},
-                  "uuid": "5ed150d9-1308-4498-a540-c62aa36b7730",
-                  "parentUUID": "856220de-d449-4949-b2b2-19cd56369868",
-                  "isHook": false,
-                  "skipped": false
-                }
-              ],
-              "suites": [],
-              "passes": [
-                "7a65059b-e667-40cd-9040-7b158fda61cf",
-                "5ed150d9-1308-4498-a540-c62aa36b7730"
-              ],
-              "failures": [],
-              "pending": [],
-              "skipped": [],
-              "duration": 88,
-              "root": false,
-              "rootEmpty": false,
-              "_timeout": 2000
-            },
-            {
-              "uuid": "00dd23ee-25f5-4be5-add7-7115eea94f1b",
-              "title": "floating values",
-              "fullFile": "C:\\Projects\\sifchain-assessment\\test\\black-box.spec.js",
-              "file": "\\test\\black-box.spec.js",
-              "beforeHooks": [],
-              "afterHooks": [],
-              "tests": [
-                {
-                  "title": "sorts correctly an array of float values",
-                  "fullTitle": "Black-box testing of a (any) sorting algorithm floating values sorts correctly an array of float values",
-                  "timedOut": false,
-                  "duration": 1,
-                  "state": "passed",
-                  "speed": "fast",
-                  "pass": true,
-                  "fail": false,
-                  "pending": false,
-                  "context": null,
-                  "code": "inputArray = [1.23, 4.67, 2.11, 8.59, 0.001, 2.00001, 10.333333333]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
-                  "err": {},
-                  "uuid": "48253f38-3dbf-4010-96a6-2277efc312f6",
-                  "parentUUID": "00dd23ee-25f5-4be5-add7-7115eea94f1b",
-                  "isHook": false,
-                  "skipped": false
-                }
-              ],
-              "suites": [],
-              "passes": [
-                "48253f38-3dbf-4010-96a6-2277efc312f6"
+                "52388f63-4e19-4786-ac61-84053289e317",
+                "8e45f787-abd7-4f48-99e0-e59d3b01cada",
+                "53758654-6b0e-4a02-9da3-c02334e65232",
+                "fe6d8a66-b5f6-4190-a8a0-32e6fd330aae",
+                "5eef87d0-5121-46ef-800d-5af0efaec9b0",
+                "508cf41c-6d56-4299-bd8b-fe946558ca4d",
+                "41200116-05cc-44b3-a0e3-6a43eadfb871",
+                "c401ed74-fe48-4036-8a15-62d1568ca79a"
               ],
               "failures": [],
               "pending": [],
@@ -305,7 +208,123 @@
               "_timeout": 2000
             },
             {
-              "uuid": "77b0264c-ca14-46c1-bb12-9ac5e6873625",
+              "uuid": "21ef51ce-4fa7-4a6d-8dc8-0b7ad6f675cf",
+              "title": "big arrays/big numbers",
+              "fullFile": "C:\\Projects\\sifchain-assessment\\test\\black-box.spec.js",
+              "file": "\\test\\black-box.spec.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "sorts correctly big array",
+                  "fullTitle": "Black-box testing of a (any) sorting algorithm big arrays/big numbers sorts correctly big array",
+                  "timedOut": false,
+                  "duration": 47,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "inputArray = randomArrayGenerator({\n    min: 1,\n    max: 10000,\n    elements: 10000\n})\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
+                  "err": {},
+                  "uuid": "8563b738-e927-4981-bf50-082f270107da",
+                  "parentUUID": "21ef51ce-4fa7-4a6d-8dc8-0b7ad6f675cf",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "sorts correctly array of big numbers",
+                  "fullTitle": "Black-box testing of a (any) sorting algorithm big arrays/big numbers sorts correctly array of big numbers",
+                  "timedOut": false,
+                  "duration": 16,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "inputArray = inputArray = randomArrayGenerator({\n    min: 1000000000000000,\n    max: 9000000000000000,\n    elements: 50\n})\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
+                  "err": {},
+                  "uuid": "619df01a-085f-471e-9ecf-19c5fe4d5e3b",
+                  "parentUUID": "21ef51ce-4fa7-4a6d-8dc8-0b7ad6f675cf",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "8563b738-e927-4981-bf50-082f270107da",
+                "619df01a-085f-471e-9ecf-19c5fe4d5e3b"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 63,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "9e640330-f937-40a5-97cc-d5c7181a8289",
+              "title": "floating values",
+              "fullFile": "C:\\Projects\\sifchain-assessment\\test\\black-box.spec.js",
+              "file": "\\test\\black-box.spec.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "sorts correctly an array of float values",
+                  "fullTitle": "Black-box testing of a (any) sorting algorithm floating values sorts correctly an array of float values",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "inputArray = [1.23, 4.67, 2.11, 8.59, 0.001, 2.00001, 10.333333333]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
+                  "err": {},
+                  "uuid": "2e4aac10-2d9e-42d0-a5f5-7e274e08bf97",
+                  "parentUUID": "9e640330-f937-40a5-97cc-d5c7181a8289",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "sorts correctly an array of mix integer and float values",
+                  "fullTitle": "Black-box testing of a (any) sorting algorithm floating values sorts correctly an array of mix integer and float values",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "inputArray = [1.23, 60, 600, 4.67, 10, 9, 2.11, 8.59, 0.001, 2.00001, 10.333333333, 11, 9]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
+                  "err": {},
+                  "uuid": "afb25ee8-e101-4bca-942a-53217a2d72bf",
+                  "parentUUID": "9e640330-f937-40a5-97cc-d5c7181a8289",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "2e4aac10-2d9e-42d0-a5f5-7e274e08bf97",
+                "afb25ee8-e101-4bca-942a-53217a2d72bf"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "17b0196c-4e22-4b93-9f7e-46ada0c1ac30",
               "title": "negative",
               "fullFile": "C:\\Projects\\sifchain-assessment\\test\\black-box.spec.js",
               "file": "\\test\\black-box.spec.js",
@@ -325,15 +344,15 @@
                   "context": null,
                   "code": "inputArray = []\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql([])",
                   "err": {},
-                  "uuid": "c3284c6f-dc1a-45ac-9b2f-729b31baff53",
-                  "parentUUID": "77b0264c-ca14-46c1-bb12-9ac5e6873625",
+                  "uuid": "1a29690e-734e-4e0e-9a3e-6a7bedb03276",
+                  "parentUUID": "17b0196c-4e22-4b93-9f7e-46ada0c1ac30",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "c3284c6f-dc1a-45ac-9b2f-729b31baff53"
+                "1a29690e-734e-4e0e-9a3e-6a7bedb03276"
               ],
               "failures": [],
               "pending": [],
@@ -344,7 +363,7 @@
               "_timeout": 2000
             },
             {
-              "uuid": "4d729230-08de-4643-bf93-8a4ba5382c8b",
+              "uuid": "1bb8c198-1cf7-4e6e-a10f-2056e5ca7329",
               "title": "others",
               "fullFile": "C:\\Projects\\sifchain-assessment\\test\\black-box.spec.js",
               "file": "\\test\\black-box.spec.js",
@@ -355,7 +374,7 @@
                   "title": "verifies sorting algorithm is stable",
                   "fullTitle": "Black-box testing of a (any) sorting algorithm others verifies sorting algorithm is stable",
                   "timedOut": false,
-                  "duration": 33,
+                  "duration": 11,
                   "state": "failed",
                   "speed": null,
                   "pass": false,
@@ -365,11 +384,11 @@
                   "code": "inputArray = [{\n    id: 5,\n    name: 'paul'\n}, {\n    id: 8,\n    name: 'eva'\n}, {\n    id: 2,\n    name: 'john'\n}, {\n    id: 10,\n    name: 'nick'\n}, {\n    id: 5,\n    name: 'kevin'\n}, {\n    id: 5,\n    name: 'mike'\n}, {\n    id: 18,\n    name: 'peter'\n}, {\n    id: 1,\n    name: 'adam'\n}]\nconsole.log('input array=', inputArray)\nsortedArray = quickSortV2(inputArray)\nconsole.log('sorted array=', sortedArray)\nconst {\n    inputArrayIndexes,\n    sortedArrayIndexes\n} = findIndexes(['paul', 'kevin', 'mike'])\nconsole.log(inputArrayIndexes)\nconsole.log(sortedArrayIndexes)\n// verify that elements with the same id (same key), have relative order maintained\nsortedArrayIndexes.forEach((element, index) => {\n    expect(element[\"index\"]).to.be.at.least(inputArrayIndexes[index][\"index\"])\n})",
                   "err": {
                     "message": "AssertionError: expected 3 to be at least 4",
-                    "estack": "AssertionError: expected 3 to be at least 4\n    at C:\\Projects\\sifchain-assessment\\test\\black-box.spec.js:138:51\n    at Array.forEach (<anonymous>)\n    at Context.<anonymous> (test\\black-box.spec.js:137:32)\n    at processImmediate (internal/timers.js:461:21)",
+                    "estack": "AssertionError: expected 3 to be at least 4\n    at C:\\Projects\\sifchain-assessment\\test\\black-box.spec.js:156:51\n    at Array.forEach (<anonymous>)\n    at Context.<anonymous> (test\\black-box.spec.js:155:32)\n    at processImmediate (internal/timers.js:461:21)",
                     "diff": "- 3\n+ 4\n"
                   },
-                  "uuid": "c35ca863-3231-4770-9f19-898fc6467a98",
-                  "parentUUID": "4d729230-08de-4643-bf93-8a4ba5382c8b",
+                  "uuid": "e41b123b-d5c0-4760-af8b-f61f0e7e3e69",
+                  "parentUUID": "1bb8c198-1cf7-4e6e-a10f-2056e5ca7329",
                   "isHook": false,
                   "skipped": false
                 }
@@ -377,11 +396,11 @@
               "suites": [],
               "passes": [],
               "failures": [
-                "c35ca863-3231-4770-9f19-898fc6467a98"
+                "e41b123b-d5c0-4760-af8b-f61f0e7e3e69"
               ],
               "pending": [],
               "skipped": [],
-              "duration": 33,
+              "duration": 11,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
@@ -397,7 +416,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "5501257a-585f-4bd3-b10f-93ee5e86770a",
+          "uuid": "5f0a7f4b-95e0-420d-baf9-3c111b1d0be7",
           "title": "White-box testing of quick sort algorithm",
           "fullFile": "C:\\Projects\\sifchain-assessment\\test\\white-box.spec.js",
           "file": "\\test\\white-box.spec.js",
@@ -406,7 +425,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "367bfc77-e483-4989-8f22-3defd3dbc162",
+              "uuid": "23932497-8a29-4a1c-9c76-9e117bba4993",
               "title": "1-level binary tree",
               "fullFile": "C:\\Projects\\sifchain-assessment\\test\\white-box.spec.js",
               "file": "\\test\\white-box.spec.js",
@@ -426,8 +445,8 @@
                   "context": null,
                   "code": "// comment: this is the same case as if input array would be empty\ninputArray = [6]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray)",
                   "err": {},
-                  "uuid": "038aed3a-091e-4494-afff-c65493a4699c",
-                  "parentUUID": "367bfc77-e483-4989-8f22-3defd3dbc162",
+                  "uuid": "32c88559-20f6-4af8-99f6-6c3966a4b6f0",
+                  "parentUUID": "23932497-8a29-4a1c-9c76-9e117bba4993",
                   "isHook": false,
                   "skipped": false
                 },
@@ -444,8 +463,8 @@
                   "context": null,
                   "code": "inputArray = [1,2]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray)",
                   "err": {},
-                  "uuid": "7c743e7e-e2b5-4d0f-b62f-0652f5797907",
-                  "parentUUID": "367bfc77-e483-4989-8f22-3defd3dbc162",
+                  "uuid": "da5c3c56-be49-4077-be79-e91f4b76b991",
+                  "parentUUID": "23932497-8a29-4a1c-9c76-9e117bba4993",
                   "isHook": false,
                   "skipped": false
                 },
@@ -462,17 +481,17 @@
                   "context": null,
                   "code": "inputArray = [2, 1]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
                   "err": {},
-                  "uuid": "57753498-9e04-408e-8bf4-e88b621b9ee8",
-                  "parentUUID": "367bfc77-e483-4989-8f22-3defd3dbc162",
+                  "uuid": "10cf2428-cd5f-4bfa-bf2a-7e5bf64fb4fa",
+                  "parentUUID": "23932497-8a29-4a1c-9c76-9e117bba4993",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "038aed3a-091e-4494-afff-c65493a4699c",
-                "7c743e7e-e2b5-4d0f-b62f-0652f5797907",
-                "57753498-9e04-408e-8bf4-e88b621b9ee8"
+                "32c88559-20f6-4af8-99f6-6c3966a4b6f0",
+                "da5c3c56-be49-4077-be79-e91f4b76b991",
+                "10cf2428-cd5f-4bfa-bf2a-7e5bf64fb4fa"
               ],
               "failures": [],
               "pending": [],
@@ -483,7 +502,7 @@
               "_timeout": 2000
             },
             {
-              "uuid": "33c7cced-61d8-48fd-8755-8b63b61e83f4",
+              "uuid": "e4765f3a-9f1e-4993-a8b6-b3abd81870c6",
               "title": "2-level binary tree",
               "fullFile": "C:\\Projects\\sifchain-assessment\\test\\white-box.spec.js",
               "file": "\\test\\white-box.spec.js",
@@ -503,15 +522,15 @@
                   "context": null,
                   "code": "inputArray = [10,7,12,8,11]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
                   "err": {},
-                  "uuid": "b957081b-ad31-420a-8a6c-0055441c1d84",
-                  "parentUUID": "33c7cced-61d8-48fd-8755-8b63b61e83f4",
+                  "uuid": "b3902983-778a-4410-a47c-4f027e57e4dc",
+                  "parentUUID": "e4765f3a-9f1e-4993-a8b6-b3abd81870c6",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "b957081b-ad31-420a-8a6c-0055441c1d84"
+                "b3902983-778a-4410-a47c-4f027e57e4dc"
               ],
               "failures": [],
               "pending": [],
@@ -522,7 +541,7 @@
               "_timeout": 2000
             },
             {
-              "uuid": "aa4e453b-4db2-426b-b829-8c4614f34e08",
+              "uuid": "53831a6b-1a32-4e0e-aa93-ce4af6e2c7d4",
               "title": "N-level binary tree",
               "fullFile": "C:\\Projects\\sifchain-assessment\\test\\white-box.spec.js",
               "file": "\\test\\white-box.spec.js",
@@ -542,8 +561,8 @@
                   "context": null,
                   "code": "inputArray = [9,8,6,2]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
                   "err": {},
-                  "uuid": "8625fb13-f4a0-4f9d-81ec-7f836ecb59d9",
-                  "parentUUID": "aa4e453b-4db2-426b-b829-8c4614f34e08",
+                  "uuid": "2ac0d464-d3ea-4f49-8239-fa31c571520e",
+                  "parentUUID": "53831a6b-1a32-4e0e-aa93-ce4af6e2c7d4",
                   "isHook": false,
                   "skipped": false
                 },
@@ -551,7 +570,7 @@
                   "title": "goes through the right (greater) side of the binary tree, n times",
                   "fullTitle": "White-box testing of quick sort algorithm N-level binary tree goes through the right (greater) side of the binary tree, n times",
                   "timedOut": false,
-                  "duration": 0,
+                  "duration": 1,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -560,8 +579,8 @@
                   "context": null,
                   "code": "inputArray = [2,6,8,9]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
                   "err": {},
-                  "uuid": "ccb82f37-fca4-4652-a272-1722596d82dd",
-                  "parentUUID": "aa4e453b-4db2-426b-b829-8c4614f34e08",
+                  "uuid": "c9e6545f-c991-468a-b036-8e0e57f6d323",
+                  "parentUUID": "53831a6b-1a32-4e0e-aa93-ce4af6e2c7d4",
                   "isHook": false,
                   "skipped": false
                 },
@@ -578,28 +597,28 @@
                   "context": null,
                   "code": "inputArray = [9,6,12,3,10,1,11,9,20,8,15]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
                   "err": {},
-                  "uuid": "8e2fcc30-29ac-4484-b7e6-a3dc2737da27",
-                  "parentUUID": "aa4e453b-4db2-426b-b829-8c4614f34e08",
+                  "uuid": "5013ba9c-796f-4186-ad22-1ab93ec6ffe6",
+                  "parentUUID": "53831a6b-1a32-4e0e-aa93-ce4af6e2c7d4",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "8625fb13-f4a0-4f9d-81ec-7f836ecb59d9",
-                "ccb82f37-fca4-4652-a272-1722596d82dd",
-                "8e2fcc30-29ac-4484-b7e6-a3dc2737da27"
+                "2ac0d464-d3ea-4f49-8239-fa31c571520e",
+                "c9e6545f-c991-468a-b036-8e0e57f6d323",
+                "5013ba9c-796f-4186-ad22-1ab93ec6ffe6"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 0,
+              "duration": 1,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "31691606-a366-4835-b570-ae2e020f3f9a",
+              "uuid": "cfb518eb-e857-4969-ae04-6b8af0a1a72d",
               "title": "Other cases",
               "fullFile": "C:\\Projects\\sifchain-assessment\\test\\white-box.spec.js",
               "file": "\\test\\white-box.spec.js",
@@ -619,15 +638,15 @@
                   "context": null,
                   "code": "inputArray = [3,3,3]\nsortedArray = quickSort(inputArray)\nexpect(sortedArray).to.eql(inputArray.sort(compareNumbers))",
                   "err": {},
-                  "uuid": "e59eae8b-909d-4fc1-b4be-754e41969bab",
-                  "parentUUID": "31691606-a366-4835-b570-ae2e020f3f9a",
+                  "uuid": "9082180d-c5b1-45b6-95af-5bd1d6260a18",
+                  "parentUUID": "cfb518eb-e857-4969-ae04-6b8af0a1a72d",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "e59eae8b-909d-4fc1-b4be-754e41969bab"
+                "9082180d-c5b1-45b6-95af-5bd1d6260a18"
               ],
               "failures": [],
               "pending": [],
